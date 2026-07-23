@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "authentication;user-able-to-login-with-valid-credentials-(itmx-internal)",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "User able to login with valid credentials (ITMX internal)",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6782713899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 745144000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user in on the login page ITMX internal",
+            "match": {
+              "location": "steps\\login.step.ts:28"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 5099538400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "verify user on the ITMX portal login page",
+            "match": {
+              "location": "steps\\login.step.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4716452299
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ITMXWEB",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "authentication",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Authentication",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
