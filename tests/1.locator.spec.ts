@@ -41,7 +41,7 @@ test('chain locator', async ({ page }) => {
 
 });
 
-test.only('filter add to card', async ({ page }) => {
+test('filter add to card', async ({ page }) => {
   await page.goto('https://web-demo.qahive.com/e-commerce/register');
   await page.locator('xpath=(//input)[1]').fill('demo01@demo.com');
   await page.locator('xpath=(//input)[2]').fill('Welcome1');

@@ -15,7 +15,7 @@ test('@hover access sub menu', async ({ page }) => {
     // await page.pause();
 });
 
-test.only('@dropdown', async ({ page }) => {
+test('@dropdown', async ({ page }) => {
   await page.goto('https://web-demo.qahive.com/form-demo');
   await page.getByRole('combobox').selectOption('Thailand');
   await page.getByRole('combobox').selectOption({ value : 'PH'});

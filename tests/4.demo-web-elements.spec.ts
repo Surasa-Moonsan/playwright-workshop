@@ -6,7 +6,7 @@ test("Demo mouse over", async ({ page }) => {
   await page.locator("css=a[href='/python/']").click();
 });
 
-test.only("Demo radio, dropdown and checkbox", async ({ page }) => {
+test("Demo radio, dropdown and checkbox", async ({ page }) => {
   await page.goto("https://web-demo.qahive.com/form-demo");
 
   // Dropdwon
