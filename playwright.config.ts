@@ -40,10 +40,10 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
 
     // {
     //   name: 'firefox',
@@ -66,24 +66,24 @@ export default defineConfig({
     // },
 
     /* Test against branded browsers. */
-    {
-      name: 'Microsoft Edge',
-      use: { 
-        ...devices['Desktop Edge'],
-        channel: 'msedge',
-        headless: false,
-        // viewport: { width: 1920, height: 1080 }, // กำหนดขนาดหน้าจอ
-        ignoreHTTPSErrors: true,
-        clientCertificates: [
-          {
-            origin: 'https://portalua1.nitmx.co.th',
-            pfxPath: 'cert/client.p12',
-            passphrase: 'User123'
-          }
-        ]
-      }
+    // {
+    //   name: 'Microsoft Edge',
+    //   use: { 
+    //     ...devices['Desktop Edge'],
+    //     channel: 'msedge',
+    //     headless: false,
+    //     // viewport: { width: 1920, height: 1080 }, // กำหนดขนาดหน้าจอ
+    //     ignoreHTTPSErrors: true,
+    //     clientCertificates: [
+    //       {
+    //         origin: 'https://portalua1.nitmx.co.th',
+    //         pfxPath: 'cert/client.p12',
+    //         passphrase: 'User123'
+    //       }
+    //     ]
+    //   }
       
-    },
+    // },
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
